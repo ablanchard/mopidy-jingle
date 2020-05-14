@@ -1,0 +1,4 @@
+include MANIFEST.in
+include README.rst
+include mopidy_jingle/ext.conf
+include mopidy_jingle/hello.wav
