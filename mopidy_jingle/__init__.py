@@ -1,14 +1,7 @@
-from __future__ import unicode_literals
-
-import logging
 import os
-
 from mopidy import config, ext, audio
 
-import json
-
-__version__ = '0.3.0'
-logger = logging.getLogger(__name__)
+__version__ = '0.1.0'
 
 class Extension(ext.Extension):
 
@@ -29,6 +22,3 @@ class Extension(ext.Extension):
     def setup(self, registry):
         from .backend import JingleBackend
         registry.add('backend', JingleBackend)
-
-
-
